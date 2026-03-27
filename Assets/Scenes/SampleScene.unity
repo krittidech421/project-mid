@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177678605}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd19c46eb1238d48ab38715ee07751f, type: 3}
+  m_Script: {fileID: 11500000, guid: afa34c7dbc8be214aad8910edcacd324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedBoost
   boostForce: 50
@@ -2687,7 +2687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: 3.98
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2695,7 +2695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 511.86038
+      value: 511.86
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3313,7 +3313,7 @@ GameObject:
   - component: {fileID: 2081657308}
   - component: {fileID: 2081657307}
   - component: {fileID: 2081657306}
-  - component: {fileID: 2081657304}
+  - component: {fileID: 2081657310}
   m_Layer: 0
   m_Name: Speed Boost Pad  (1)
   m_TagString: Untagged
@@ -3321,20 +3321,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2081657304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081657303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd19c46eb1238d48ab38715ee07751f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpeedBoost
-  boostForce: 50
-  boostDuration: 1
 --- !u!65 &2081657306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3428,6 +3414,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &2081657310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081657303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa34c7dbc8be214aad8910edcacd324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedBoost
+  boostForce: 50
+  boostDuration: 1
 --- !u!1001 &2138825671
 PrefabInstance:
   m_ObjectHideFlags: 0
