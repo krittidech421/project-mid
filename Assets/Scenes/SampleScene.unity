@@ -2878,19 +2878,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.52
+      value: 18.92822
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
       value: 15.899996
-=======
-      value: 2.41
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 206.74
+      value: 197.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3218,19 +3214,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.03
+      value: 34.3
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
       value: 16.399996
-=======
-      value: 2.56
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 127.84
+      value: 127.5
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3436,7 +3428,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0b7847c186e60144957b95b1b5e826d, type: 3}
-<<<<<<< Updated upstream
 --- !u!1001 &1745042550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3494,8 +3485,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feaf04557fefb494eaee6b6f80ef3f6d, type: 3}
-=======
->>>>>>> Stashed changes
 --- !u!1001 &1816962773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4464,6 +4453,7 @@ SceneRoots:
   - {fileID: 408225356}
   - {fileID: 62951698}
   - {fileID: 1041954398}
+  - {fileID: 1745042550}
   - {fileID: 1531705345}
   - {fileID: 1997652244}
   - {fileID: 2033430352}
