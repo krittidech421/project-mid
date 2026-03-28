@@ -691,6 +691,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &279034280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7273277870858425138, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279034282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279034280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddf2ef1045680b44b3ad6b5ebb882e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IceCarController
+  wheels:
+  - {fileID: 279034283}
+  iceStiffness: 0.5
+  normalStiffness: 1
+--- !u!146 &279034283 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 2257717428968048299, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &293432622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -903,6 +929,10 @@ PrefabInstance:
       propertyPath: maxSteerAngle
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 3609228573094874869, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4181744651895520981, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
       propertyPath: m_Constraints
       value: 80
@@ -985,8 +1015,149 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5310701854174835517, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
       insertIndex: -1
       addedObject: {fileID: 963194228}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3609228573094874869, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1816481336}
+    - targetCorrespondingSourceObject: {fileID: 7273277870858425138, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279034282}
+    - targetCorrespondingSourceObject: {fileID: 2020657347215802082, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1904833583}
+    - targetCorrespondingSourceObject: {fileID: 6252641650026950115, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1436082901}
   m_SourcePrefab: {fileID: 100100000, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+--- !u!1 &494792008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494792013}
+  - component: {fileID: 494792012}
+  - component: {fileID: 494792011}
+  - component: {fileID: 494792010}
+  - component: {fileID: 494792009}
+  m_Layer: 0
+  m_Name: Trap (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &494792009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494792008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676b0182f76f8d243ac97b9dcec44d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PistonObstacle
+  targetAxis: 0
+  speed: 5
+  distance: 8
+  waitTime: 2
+--- !u!65 &494792010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494792008}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &494792011
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494792008}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b8dde881d8739814fb95d6d294623611, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &494792012
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494792008}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &494792013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494792008}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7130519, z: -0, w: 0.70111126}
+  m_LocalPosition: {x: 18.67, y: 39.99, z: 240.17}
+  m_LocalScale: {x: 5.730762, y: 8.776672, z: 17.201546}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.968, z: 0}
 --- !u!1001 &671998534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1781,7 +1952,7 @@ Transform:
   m_GameObject: {fileID: 953284047}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0033083207, y: -0.0142263165, z: -0.0063934, w: 0.9998729}
-  m_LocalPosition: {x: 91.1, y: 27.899996, z: 159.9}
+  m_LocalPosition: {x: 51.27, y: 26.69, z: 181.54}
   m_LocalScale: {x: 1.7289103, y: 1, z: 2.9137456}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2164,7 +2335,7 @@ Transform:
   m_GameObject: {fileID: 1041954395}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0025166755, y: -0.0027134125, z: -0.001695145, w: 0.9999917}
-  m_LocalPosition: {x: -315, y: 7, z: -314}
+  m_LocalPosition: {x: -315, y: -2.3, z: -314}
   m_LocalScale: {x: 0.91964006, y: 0.8504948, z: 0.7973389}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2698,20 +2869,28 @@ PrefabInstance:
       value: Bridge_Simple_Straight (2)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99886674
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.92822
+      value: 19.749
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalPosition.y
+ HEAD
  HEAD
       value: 15.899996
 
       value: 16.35
  207f8f6c27201fb0a5f3ae24dde3917552012076
+
+      value: 15.81
+ ceef2071c768393039b9af17a1d481578206c577
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 197.8
+      value: 210.45
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2746,6 +2925,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8d1a7213141ecc41a4daaa178fea399, type: 3}
+--- !u!1 &1436082899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6252641650026950115, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1436082901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436082899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddf2ef1045680b44b3ad6b5ebb882e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IceCarController
+  wheels:
+  - {fileID: 1436082902}
+  iceStiffness: 0.5
+  normalStiffness: 1
+--- !u!146 &1436082902 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 3824239510747218182, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1489296719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2966,19 +3171,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3221709
+      value: 1.3997822
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.3
+      value: 35.25
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.399996
+      value: 15.81
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 127.5
+      value: 128.61
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7d6b9877311d9b54d9b2807970618528, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3241,6 +3446,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feaf04557fefb494eaee6b6f80ef3f6d, type: 3}
+--- !u!1 &1816481334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3609228573094874869, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1816481336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816481334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddf2ef1045680b44b3ad6b5ebb882e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IceCarController
+  wheels:
+  - {fileID: 1816481337}
+  iceStiffness: 0.5
+  normalStiffness: 1
+--- !u!146 &1816481337 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 942546167412906840, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1816962773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3355,6 +3586,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98ff5b83cacc7174584d649257fa7a05, type: 3}
+--- !u!1 &1904833581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2020657347215802082, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1904833583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904833581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddf2ef1045680b44b3ad6b5ebb882e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IceCarController
+  wheels:
+  - {fileID: 1904833584}
+  iceStiffness: 0.5
+  normalStiffness: 1
+--- !u!146 &1904833584 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 6954208267216912616, guid: 50f8036edfc859e4c92bb384d7c4df24, type: 3}
+  m_PrefabInstance: {fileID: 490526689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1927904108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3734,15 +3991,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39799cf03cd78bd4b96ed2f556aa8af9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.2
+      value: 19.58
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39799cf03cd78bd4b96ed2f556aa8af9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.900014
+      value: 13.05
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39799cf03cd78bd4b96ed2f556aa8af9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 365.6604
+      value: 331.25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39799cf03cd78bd4b96ed2f556aa8af9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3884,7 +4141,7 @@ Transform:
   m_GameObject: {fileID: 2040884602}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7130519, z: -0, w: 0.70111126}
-  m_LocalPosition: {x: 18.89, y: 30.78, z: 227.27}
+  m_LocalPosition: {x: 18.89, y: 46, z: 227.27}
   m_LocalScale: {x: 1, y: 8.776672, z: 15.361267}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3902,7 +4159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd1eec5954747d4090441d25d5e287a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoDoor
-  moveDistance: 5
+  moveDistance: 10
   speed: 3
 --- !u!1001 &2062214585
 PrefabInstance:
@@ -4226,5 +4483,6 @@ SceneRoots:
   - {fileID: 2081657309}
   - {fileID: 1614106686}
   - {fileID: 2040884606}
+  - {fileID: 494792013}
   - {fileID: 761097694}
   - {fileID: 294359279}
